@@ -1,0 +1,13 @@
+qemu-system-x86_64 \
+	-monitor stdio \
+	-soundhw ac97 \
+	-k no \
+	-machine accel=kvm \
+	-m 4096 \
+	-hda /home/magne/.aqemu/Kali_Linux_HDA.img \
+	-boot once=d,menu=off \
+	-net nic,macaddr=00:db:08:53:95:ef \
+	-net user \
+	-rtc base=localtime \
+	-vga std \
+	-name "Kali Linux"
