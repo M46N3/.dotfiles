@@ -219,7 +219,9 @@ bindsym $mod+w exec chromium			# Open chromium
 bindsym Ctrl+Shift+Escape exec $term -e htop 	# Open htop(task manager)
 bindsym $mod+p exec arandr			# Open display settings
 # Start Kali Linux VM
-bindsym $mod+k exec "bash ~/.scripts/start_kali.sh"	
+bindsym $mod+k exec "bash ~/.scripts/start_kali.sh"
+# Start macOS VM
+bindsym $mod+m exec "bash ~/macOS-Simple-KVM/basic.sh"	
 # Take screenshot
 bindsym Print exec --no-startup-id "bash ~/.scripts/printscreen.sh"
 bindsym Shift+Print exec --no-startup-id "bash ~/.scripts/printscreenarea.sh"
