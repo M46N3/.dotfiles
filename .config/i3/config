@@ -136,7 +136,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 # Set default workspace for programs
 # assign [class="Xfce4-terminal"] $ws1
-assign [class="Chromium"] $ws2
+assign [class="Google-chrome"] $ws2
 assign [class="Vmrc"] $ws4
 assign [class="Qemu-system-x86_64"] $ws10
 
@@ -195,6 +195,7 @@ exec --no-startup-id picom		# Makes windows transparent etc.
 exec --no-startup-id blueman-applet	# Bluetooth applet
 exec --no-startup-id volumeicon		# Volume icon
 exec --no-startup-id dropbox		# Dropbox
+exec --no-startup-id xfce4-power-manager	# Power manager 
 exec_always --no-startup-id pamac-tray	# Update manager tray icon
 exec --no-startup-id orage		# Orage
 for_window [class="Orage"] move position 1330 689
@@ -215,7 +216,7 @@ bar {
 # Lock screen, color black
 #bindsym Ctrl+$alt+Delete exec i3lock -c 000000 	
 bindsym Ctrl+$alt+Delete exec "bash ~/.scripts/lock.sh" 	
-bindsym $mod+w exec chromium			# Open chromium
+bindsym $mod+w exec google-chrome-stable	# Open chrome
 bindsym Ctrl+Shift+Escape exec $term -e htop 	# Open htop(task manager)
 bindsym $mod+p exec arandr			# Open display settings
 # Start Kali Linux VM
